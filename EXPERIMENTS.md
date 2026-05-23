@@ -198,8 +198,8 @@ def get_refined_score(row):
 | FINAL_NLP_V2_383.csv | 0.443 | 383명 | NLP_V2 기본 |
 | FINAL_NLP_V2_380.csv | 0.447 | 380명 | ↑ 선발 줄임 |
 | FINAL_NLP_V2_378.csv | 0.447 | 378명 | |
-| **FINAL_NLP_V2_375.csv** | **0.44897** | **375명** | ** 최고점** |
-| **FINAL_NLP_V2_376.csv** | **0.44897** | **376명** | ** 동점** |
+| **FINAL_NLP_V2_375.csv** | **0.44897** | **375명** | **최고점** |
+| **FINAL_NLP_V2_376.csv** | **0.44897** | **376명** | **동점** |
 | FINAL_NLP_V2_373.csv | 0.445 | 373명 | |
 | FINAL_NLP_V2_370.csv | 0.447 | 370명 | |
 | FINAL_NLP_V2_365.csv | 0.448 | 365명 | |
