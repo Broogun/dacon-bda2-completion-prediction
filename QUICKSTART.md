@@ -48,9 +48,9 @@ BDA-Completion-Prediction/
     ├── submission.csv
     └── oof/
 
-# 원본 실험 코드 (아카이브, 수정 금지)
-├── plz.ipynb
-└── test.ipynb
+# 원본 실험 코드 (아카이브)
+├── test1.ipynb
+└── test2.ipynb
 ```
 
 ---
