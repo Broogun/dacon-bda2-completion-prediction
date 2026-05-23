@@ -109,7 +109,7 @@ print(f"OOF LightGBM range: [{oof_lgbm.min():.3f}, {oof_lgbm.max():.3f}]")
 print("\n[4/5] Saving OOF predictions...")
 np.save(CATBOOST_OOF, oof_cat)
 np.save(LIGHTGBM_OOF, oof_lgbm)
-print(f"✅ OOF saved")
+print(f"OOF saved")
 
 # Train final models on full data
 print("\n[5/5] Training final models on full data...")
@@ -136,14 +136,14 @@ test_lgbm = final_lgbm.predict(X_test[num_features])
 # Save models
 joblib.dump(final_cat, CATBOOST_MODEL)
 joblib.dump(final_lgbm, LIGHTGBM_MODEL)
-print(f"✅ Models saved")
+print(f"Models saved")
 
 # Save test predictions
 np.save(OUTPUT_DIR / "catboost_test.npy", test_cat)
 np.save(OUTPUT_DIR / "lightgbm_test.npy", test_lgbm)
-print(f"✅ Test predictions saved")
+print(f"Test predictions saved")
 
 print("\n" + "="*60)
-print("✅ Ensemble Training Complete!")
+print("Ensemble Training Complete!")
 print("="*60)
 print(f"\nNext step: python run_stacking.py")
