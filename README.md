@@ -182,10 +182,7 @@ BDA-Completion-Prediction/
 │
 ├── run_rule_discovery.py   # Decision Tree Rule 추출
 ├── run_ensemble.py         # CatBoost + LightGBM 앙상블
-├── run_stacking.py         # Meta-model + 최종 예측
-│
-├── plz.ipynb               # 원본 실험 코드 (아카이브)
-└── test.ipynb              # 원본 실험 코드 (아카이브)
+└──  run_stacking.py         # Meta-model + 최종 예측
 ```
 
 ---
