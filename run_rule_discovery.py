@@ -110,17 +110,17 @@ joblib.dump({
     'feature_names': train_features.columns.tolist(),
     'config': config
 }, RULE_MODEL)
-print(f"✅ Model saved: {RULE_MODEL}")
+print(f"Model saved: {RULE_MODEL}")
 
 # Save OOF
 np.save(RULE_OOF, train_rule_score)
-print(f"✅ OOF saved: {RULE_OOF}")
+print(f"OOF saved: {RULE_OOF}")
 
 # Save test predictions
 np.save(OUTPUT_DIR / "rule_test.npy", test_rule_score)
-print(f"✅ Test predictions saved")
+print(f"Test predictions saved")
 
 print("\n" + "="*60)
-print("✅ Rule Discovery Complete!")
+print("Rule Discovery Complete!")
 print("="*60)
 print(f"\nNext step: python run_ensemble.py")
