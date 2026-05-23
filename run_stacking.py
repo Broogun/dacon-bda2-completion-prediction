@@ -113,11 +113,11 @@ submission.to_csv(SUBMISSION_PATH, index=False)
 # Save meta-model
 joblib.dump(meta_model, META_MODEL)
 
-print(f"\n✅ Submission saved: {SUBMISSION_PATH}")
-print(f"✅ Meta-model saved: {META_MODEL}")
+print(f"\nSubmission saved: {SUBMISSION_PATH}")
+print(f"Meta-model saved: {META_MODEL}")
 
 print("\n" + "="*60)
-print("✅ Stacking Complete!")
+print("Stacking Complete!")
 print("="*60)
 print(f"\nSubmission file ready: {SUBMISSION_PATH}")
 print(f"Selected: {predictions.sum()}/{len(predictions)} students")
