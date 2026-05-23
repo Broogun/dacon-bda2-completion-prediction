@@ -124,7 +124,7 @@ EXP     │ Feb 21      │ 0.439  Semester-only 실험 (참고용)
 | submission_BackToBasic_386.csv | 0.412 | |
 | submission_Final_Master_Complete.csv | 0.423 | |
 
-> ** 중요한 실패 기록: ML_FEATURE_VER_384 (0.384)**
+> **중요한 실패 기록: ML_FEATURE_VER_384 (0.384)**
 >
 > ML 피처(클래스 진행도, 결측률, 텍스트 길이 등)만 사용하고 Rule Score를 제거한 실험.
 > 결과: **0.384** — Phase 2 중 최저점. 순수 ML 접근이 Rule 기반보다 현저히 낮음.
