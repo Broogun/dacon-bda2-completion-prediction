@@ -62,7 +62,7 @@ BDA-Completion-Prediction/
 data/ 폴더에 train.csv, test.csv 복사
 ```
 
-### 학습 및 예측 (순서대로)
+### 학습 및 예측
 
 ```bash
 # 1단계: Rule Discovery
