@@ -1,0 +1,40 @@
+# CatBoost Configuration
+
+model_params:
+  iterations: 2000
+  learning_rate: 0.03
+  depth: 6
+  l2_leaf_reg: 5
+  random_seed: 42
+  verbose: 0
+  early_stopping_rounds: 100
+
+# Cross-validation
+cv:
+  n_folds: 5
+  n_seeds: [41, 42, 43, 44, 45]
+  shuffle: true
+  stratified: true
+
+# Feature Engineering
+features:
+  categorical:
+    - "school1"
+    - "major_field"
+    - "major_type"
+    - "job"
+    - "desired_job"
+    - "re_registration"
+    - "project_type"
+    - "inflow_route"
+  
+  numerical:
+    - "generation"
+    - "completed_semester"
+    - "time_input"
+    - "class_max_stage"
+    - "class_completion_rate"
+    - "prev_fill_cnt"
+    - "missing_cnt"
+    - "whyBDA_len"
+    - "what_to_gain_len"

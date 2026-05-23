@@ -1,0 +1,42 @@
+# LightGBM Configuration
+
+model_params:
+  objective: "binary"
+  metric: "binary_logloss"
+  learning_rate: 0.03
+  num_boost_round: 2000
+  max_depth: -1
+  num_leaves: 31
+  min_data_in_leaf: 20
+  feature_fraction: 0.8
+  bagging_fraction: 0.8
+  bagging_freq: 5
+  verbose: -1
+  early_stopping_rounds: 100
+
+# Cross-validation
+cv:
+  n_folds: 5
+  n_seeds: [41, 42, 43, 44, 45]
+  shuffle: true
+  stratified: true
+
+# Feature Engineering (numerical only)
+features:
+  numerical:
+    - "generation"
+    - "completed_semester"
+    - "time_input"
+    - "class_max_stage"
+    - "class_completion_rate"
+    - "class_missing_cnt"
+    - "prev_fill_cnt"
+    - "has_prev_class"
+    - "has_double_major"
+    - "missing_cnt"
+    - "missing_rate"
+    - "whyBDA_len"
+    - "whyBDA_word_cnt"
+    - "what_to_gain_len"
+    - "what_to_gain_word_cnt"
+    - "total_text_len"

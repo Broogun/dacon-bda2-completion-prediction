@@ -1,0 +1,51 @@
+# Decision Tree for Rule Discovery
+
+model_params:
+  max_depth: 3
+  min_samples_leaf: 50
+  criterion: "gini"
+  random_state: 42
+
+# Rule 생성 기준
+rule_criteria:
+  min_lift: 1.3        # 최소 Lift 값
+  min_support: 50      # 최소 샘플 수
+  max_l1_distance: 0.2 # 최대 L1 Distance (Train/Test 분포 차이)
+
+# Persona Rules (통계 검증된 것만)
+persona_rules:
+  - name: "natural_science_jobseeker"
+    condition: "major_field == '자연과학' AND job == '취준생'"
+    lift: 1.62
+    support: 68
+    l1_distance: 0.16
+    
+  - name: "humanities_student"
+    condition: "major_field == '인문학' AND job == '대학생'"
+    lift: 1.47
+    support: 72
+    l1_distance: 0.14
+    
+  - name: "re_registration"
+    condition: "re_registration == '예'"
+    lift: 1.52
+    support: 185
+    l1_distance: 0.04
+    
+  - name: "time_high"
+    condition: "time_input >= 3.0"
+    lift: 1.38
+    support: 142
+    l1_distance: 0.07
+
+# Hard Kill Rules (극단적 낮은 Lift)
+hard_kill_rules:
+  - name: "law_major"
+    condition: "major_field == '법학' OR '법' in major1_1"
+    lift: 0.28
+    support: 32
+    
+  - name: "business_worker"
+    condition: "major_field == '경영학' AND job IN ['직장인', '취준생']"
+    lift: 0.50
+    support: 89

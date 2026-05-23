@@ -1,0 +1,59 @@
+# 원본 실험 코드 (아카이브 — GitHub 제외)
+plz.ipynb
+test.ipynb
+
+# 이 대회와 무관한 다른 프로젝트 폴더
+대시보드 구성/
+조규모 별 성과 분석/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data (대회 규정상 업로드 금지)
+data/*.csv
+data/*.pkl
+!data/.gitkeep
+
+# Models
+models/*.pkl
+models/*.joblib
+models/*.txt
+!models/.gitkeep
+
+# Outputs
+outputs/*.csv
+outputs/*.npy
+outputs/*.pkl
+outputs/oof/*.npy
+!outputs/.gitkeep
+!outputs/oof/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

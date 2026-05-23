@@ -1,0 +1,30 @@
+# Meta-model (Stacking) Configuration
+
+model_params:
+  type: "LogisticRegression"
+  random_state: 42
+  C: 1.0
+  max_iter: 1000
+
+# Stacking inputs
+inputs:
+  - "catboost_oof"   # CatBoost OOF predictions
+  - "lightgbm_oof"   # LightGBM OOF predictions
+  - "rule_score"     # Rule-based score from Decision Tree
+
+# Flip-rate selection
+flip_rate:
+  method: "top_k"      # or "threshold"
+  target_count: 375    # 46.9% of 800
+  
+  # Optuna optimization (optional)
+  optimization:
+    enabled: false
+    n_trials: 50
+    k_range: [300, 450]
+    step: 25
+
+# Hard kill application
+hard_kill:
+  enabled: true
+  apply_after_ensemble: true  # Apply after meta-model prediction
