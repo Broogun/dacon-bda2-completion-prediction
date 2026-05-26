@@ -113,7 +113,7 @@ EXP     │ Feb 21      │ 0.439  Semester-only 실험 (참고용)
 |------|------|----------|
 | submission_Final_Polished_LGBM.csv | 0.420 | LGBM 정밀화 |
 | submission_Final_Masterpiece_Fixed.csv | 0.408 | |
-| **ML_FEATURE_VER_384.csv** | **0.384** | ** 순수 ML 피처만 사용 → 실패** |
+| **ML_FEATURE_VER_384.csv** | **0.384** | **순수 ML 피처만 사용 → 실패** |
 | ULTIMATE_REFINED_383.csv | 0.404 | |
 | FINAL_PURE_KILL_383.csv | **0.441** | Hard Kill 적용 |
 | FINAL_CLEAN_384.csv | **0.441** | Clean 버전 |
